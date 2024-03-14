@@ -1,0 +1,84 @@
+organizing data
+------------------
+ USER
+ ******
+  id  - string 
+  fname - string 
+  lname - string 
+  friends - array<object>
+  email - string 
+  password - string 
+  picture path - string ref
+  location - string 
+  occupation - string 
+  viewed profile - number
+  impression - number
+
+
+  POST
+  ******
+   
+    id - string 
+    userid - string ref
+    fname - string 
+    lname - string
+    location - string
+    description - string 
+    userpicture path = string ref
+    picture path = string ref
+    like = Object < string ref>
+    comments - array string 
+
+    FRIENDS (SUB DOC)
+************************
+
+    id - string
+    fname - string
+    lname - string 
+    picture path = string ref
+    occupation - sring 
+    location - string 
+
+    IMAGES 
+    *********
+      path 
+
+
+AUTHENTICATION
+---------------
+   It is like when you register and login 
+
+AUTHORIZATION 
+--------------
+   It is like to check when someone logged in so to
+   perform some action like to show their list, 
+
+
+/////////////////////////////////
+
+client side packages 
+
+. reduxjs/toolkit -> it's very easy way to use redux wrapper around reduxjs
+. redux/persist -> store user and token information into local storage so that user close then come back then it's still in browser
+.react-dropzone -> file handling in frontend
+. formik  -> for form handling 
+.yup -> with validation 
+.@mui/material ->
+
+JSONCONFIG.JSON 
+***************
+//  when we include different files into other files we just
+//  start from source
+
+STATE FOLDER IS FOR REDUX AND TOOLKIT
+
+// JSX file represent that they have react component in them
+
+jsonconfig.json file
+-----------------------
+  it is because when we want to import different files
+  into other files we can start from src
+
+  State FOLDER
+  ----------------
+    Here we will keep the redux and toolkit 
