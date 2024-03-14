@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt'; // it allows us to encrypt our password
-import jwt from 'jsonwebtoken'; // it gives user a web toke so they can use this for authorization
+import jwt from 'jsonwebtoken'; // it gives user a web token so they can use this for authorization
 import User from "../models/User.js"
 
 
